@@ -30,4 +30,4 @@ map.add_child(fgNfl)
 
 map.add_child(folium.LayerControl())
 
-map.save("mlbmap.html")
+map.save("stadiumMap.html")
