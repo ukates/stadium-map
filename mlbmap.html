@@ -1,0 +1,1639 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_58b4f51fc85d48ed8b104eee80a3516e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_58b4f51fc85d48ed8b104eee80a3516e" ></div>
+        
+</body>
+<script>    
+    
+            var map_58b4f51fc85d48ed8b104eee80a3516e = L.map(
+                "map_58b4f51fc85d48ed8b104eee80a3516e",
+                {
+                    center: [39.5, -98.35],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_34881167055d46998548e1b8d38779fd = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_58b4f51fc85d48ed8b104eee80a3516e);
+        
+    
+            var feature_group_c02b670048954b909e4776bd794dc30f = L.featureGroup(
+                {}
+            ).addTo(map_58b4f51fc85d48ed8b104eee80a3516e);
+        
+    
+            var marker_d330188f266749859603e0604e5d3e80 = L.marker(
+                [33.799925, -117.88319399999999],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_d4b915c9488b4c3c95a4c97ab5ce9245 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d330188f266749859603e0604e5d3e80.setIcon(icon_d4b915c9488b4c3c95a4c97ab5ce9245);
+        
+    
+        var popup_2cd367544abf4cdb9793c5972f7bd77a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_abdaa9f580494e97aad155f7ffd34169 = $(`<div id="html_abdaa9f580494e97aad155f7ffd34169" style="width: 100.0%; height: 100.0%;">Angel Stadium of Anaheim</div>`)[0];
+            popup_2cd367544abf4cdb9793c5972f7bd77a.setContent(html_abdaa9f580494e97aad155f7ffd34169);
+        
+
+        marker_d330188f266749859603e0604e5d3e80.bindPopup(popup_2cd367544abf4cdb9793c5972f7bd77a)
+        ;
+
+        
+    
+    
+            var marker_4137f669e4824f79b861d9c66ec86be6 = L.marker(
+                [37.778473, -122.389595],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_37ba385effe144f4b75d18125329a50b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4137f669e4824f79b861d9c66ec86be6.setIcon(icon_37ba385effe144f4b75d18125329a50b);
+        
+    
+        var popup_db51f21cb8914bcebb57053625e270f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_43a45bb13f594a049fb4e7a87835fb1b = $(`<div id="html_43a45bb13f594a049fb4e7a87835fb1b" style="width: 100.0%; height: 100.0%;">AT&T Park</div>`)[0];
+            popup_db51f21cb8914bcebb57053625e270f6.setContent(html_43a45bb13f594a049fb4e7a87835fb1b);
+        
+
+        marker_4137f669e4824f79b861d9c66ec86be6.bindPopup(popup_db51f21cb8914bcebb57053625e270f6)
+        ;
+
+        
+    
+    
+            var marker_18abaeffef2d43a0a73004765741555f = L.marker(
+                [39.755891, -104.994198],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_5538d56dfa5f44808dce33fe0220f44f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_18abaeffef2d43a0a73004765741555f.setIcon(icon_5538d56dfa5f44808dce33fe0220f44f);
+        
+    
+        var popup_9ac8513ea6fa4bb2984e11335744d2a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e9ec61a4d37e44a6a03429fe6ed664a4 = $(`<div id="html_e9ec61a4d37e44a6a03429fe6ed664a4" style="width: 100.0%; height: 100.0%;">Coors Field</div>`)[0];
+            popup_9ac8513ea6fa4bb2984e11335744d2a4.setContent(html_e9ec61a4d37e44a6a03429fe6ed664a4);
+        
+
+        marker_18abaeffef2d43a0a73004765741555f.bindPopup(popup_9ac8513ea6fa4bb2984e11335744d2a4)
+        ;
+
+        
+    
+    
+            var marker_dadb1ff9e6d6407990c22ff681fe41fe = L.marker(
+                [38.622316999999995, -90.19389100000001],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_cd878d0a958448889a7081e341d62e4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dadb1ff9e6d6407990c22ff681fe41fe.setIcon(icon_cd878d0a958448889a7081e341d62e4d);
+        
+    
+        var popup_9cfaabefcae4464aa9c8e352805658f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fca4e8d044bc425ab0a3748e8afd0e75 = $(`<div id="html_fca4e8d044bc425ab0a3748e8afd0e75" style="width: 100.0%; height: 100.0%;">Busch Stadium</div>`)[0];
+            popup_9cfaabefcae4464aa9c8e352805658f6.setContent(html_fca4e8d044bc425ab0a3748e8afd0e75);
+        
+
+        marker_dadb1ff9e6d6407990c22ff681fe41fe.bindPopup(popup_9cfaabefcae4464aa9c8e352805658f6)
+        ;
+
+        
+    
+    
+            var marker_24fffad994a24f4898ed72527b70f024 = L.marker(
+                [33.445526, -112.066721],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_a3167a31bee74b21ad3ff6cc2721d7aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_24fffad994a24f4898ed72527b70f024.setIcon(icon_a3167a31bee74b21ad3ff6cc2721d7aa);
+        
+    
+        var popup_0373d51887a2418386286740956d6db5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0274e773d1e045a98cbe0bc1462fd459 = $(`<div id="html_0274e773d1e045a98cbe0bc1462fd459" style="width: 100.0%; height: 100.0%;">Chase Field</div>`)[0];
+            popup_0373d51887a2418386286740956d6db5.setContent(html_0274e773d1e045a98cbe0bc1462fd459);
+        
+
+        marker_24fffad994a24f4898ed72527b70f024.bindPopup(popup_0373d51887a2418386286740956d6db5)
+        ;
+
+        
+    
+    
+            var marker_11cd8653f37a41f0a78f23523c85cc6c = L.marker(
+                [34.072724, -118.240646],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_40a8b515c64d4fb78923f4522094cdea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_11cd8653f37a41f0a78f23523c85cc6c.setIcon(icon_40a8b515c64d4fb78923f4522094cdea);
+        
+    
+        var popup_2e1168f9b4a94a159d928aa7e20dfa52 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8719343bdded4bdd9babaa92474327a6 = $(`<div id="html_8719343bdded4bdd9babaa92474327a6" style="width: 100.0%; height: 100.0%;">Dodger Stadium</div>`)[0];
+            popup_2e1168f9b4a94a159d928aa7e20dfa52.setContent(html_8719343bdded4bdd9babaa92474327a6);
+        
+
+        marker_11cd8653f37a41f0a78f23523c85cc6c.bindPopup(popup_2e1168f9b4a94a159d928aa7e20dfa52)
+        ;
+
+        
+    
+    
+            var marker_f60606cb87d144dd9bb79d54f0dabdbb = L.marker(
+                [40.756337, -73.84604300000001],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_4581c45775a348ad9f2e59342838e22b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f60606cb87d144dd9bb79d54f0dabdbb.setIcon(icon_4581c45775a348ad9f2e59342838e22b);
+        
+    
+        var popup_4f68a16ef51f4d2892e8a8e1077fdd8f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e25f78e73962459989445b8722835c1f = $(`<div id="html_e25f78e73962459989445b8722835c1f" style="width: 100.0%; height: 100.0%;">Citi Field</div>`)[0];
+            popup_4f68a16ef51f4d2892e8a8e1077fdd8f.setContent(html_e25f78e73962459989445b8722835c1f);
+        
+
+        marker_f60606cb87d144dd9bb79d54f0dabdbb.bindPopup(popup_4f68a16ef51f4d2892e8a8e1077fdd8f)
+        ;
+
+        
+    
+    
+            var marker_5659bde71ca14be08e62273ed2c59078 = L.marker(
+                [39.905547, -75.166589],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_9a6f11e223de4e4988dc73b1f5136101 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5659bde71ca14be08e62273ed2c59078.setIcon(icon_9a6f11e223de4e4988dc73b1f5136101);
+        
+    
+        var popup_b59f05a41eb847a291b4b9de6b7c7efb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6151735b81044a649ab8d7dc435f7a76 = $(`<div id="html_6151735b81044a649ab8d7dc435f7a76" style="width: 100.0%; height: 100.0%;">Citizens Bank Park</div>`)[0];
+            popup_b59f05a41eb847a291b4b9de6b7c7efb.setContent(html_6151735b81044a649ab8d7dc435f7a76);
+        
+
+        marker_5659bde71ca14be08e62273ed2c59078.bindPopup(popup_b59f05a41eb847a291b4b9de6b7c7efb)
+        ;
+
+        
+    
+    
+            var marker_763a7e5ab5d84318a21d9d828755c649 = L.marker(
+                [42.339227, -83.04950600000001],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_3987a96b1d9046bd9d6872c159ee2549 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_763a7e5ab5d84318a21d9d828755c649.setIcon(icon_3987a96b1d9046bd9d6872c159ee2549);
+        
+    
+        var popup_a201d518a4054ce8aa74e0998c0ae7b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_abfd16f6fdbd4272840f8651cfc8c4d4 = $(`<div id="html_abfd16f6fdbd4272840f8651cfc8c4d4" style="width: 100.0%; height: 100.0%;">Comerica Park</div>`)[0];
+            popup_a201d518a4054ce8aa74e0998c0ae7b3.setContent(html_abfd16f6fdbd4272840f8651cfc8c4d4);
+        
+
+        marker_763a7e5ab5d84318a21d9d828755c649.bindPopup(popup_a201d518a4054ce8aa74e0998c0ae7b3)
+        ;
+
+        
+    
+    
+            var marker_3daa5cd7dc99472f8f5ac3441d775780 = L.marker(
+                [42.346619, -71.096961],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_fc3b32d7bd0b4745b5d030aa4a1e1c29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3daa5cd7dc99472f8f5ac3441d775780.setIcon(icon_fc3b32d7bd0b4745b5d030aa4a1e1c29);
+        
+    
+        var popup_cef0a37646764704bef84c34d5802032 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c304b1507294046ab5a2e47bbe55153 = $(`<div id="html_8c304b1507294046ab5a2e47bbe55153" style="width: 100.0%; height: 100.0%;">Fenway Park</div>`)[0];
+            popup_cef0a37646764704bef84c34d5802032.setContent(html_8c304b1507294046ab5a2e47bbe55153);
+        
+
+        marker_3daa5cd7dc99472f8f5ac3441d775780.bindPopup(popup_cef0a37646764704bef84c34d5802032)
+        ;
+
+        
+    
+    
+            var marker_81e9d9fada254804a03078b67b6b48c2 = L.marker(
+                [32.751146999999996, -97.082454],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_2597b4ba5ef149d39a102187920f9d14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_81e9d9fada254804a03078b67b6b48c2.setIcon(icon_2597b4ba5ef149d39a102187920f9d14);
+        
+    
+        var popup_bbf25b91b75e49e9ae5b628b7cc31af0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36790ce42bb746428a5f0666285f8f5d = $(`<div id="html_36790ce42bb746428a5f0666285f8f5d" style="width: 100.0%; height: 100.0%;">Globe Life Park in Arlington</div>`)[0];
+            popup_bbf25b91b75e49e9ae5b628b7cc31af0.setContent(html_36790ce42bb746428a5f0666285f8f5d);
+        
+
+        marker_81e9d9fada254804a03078b67b6b48c2.bindPopup(popup_bbf25b91b75e49e9ae5b628b7cc31af0)
+        ;
+
+        
+    
+    
+            var marker_dea20d6494b943559976454a2e2648cd = L.marker(
+                [39.097935, -84.508158],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_5accd95a7d66407c8ddcb4255893be72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dea20d6494b943559976454a2e2648cd.setIcon(icon_5accd95a7d66407c8ddcb4255893be72);
+        
+    
+        var popup_0f5b5b70695c473c84499ad7fd53fb96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15fe870902264cabb47993ee922d9601 = $(`<div id="html_15fe870902264cabb47993ee922d9601" style="width: 100.0%; height: 100.0%;">Great American Ball Park</div>`)[0];
+            popup_0f5b5b70695c473c84499ad7fd53fb96.setContent(html_15fe870902264cabb47993ee922d9601);
+        
+
+        marker_dea20d6494b943559976454a2e2648cd.bindPopup(popup_0f5b5b70695c473c84499ad7fd53fb96)
+        ;
+
+        
+    
+    
+            var marker_6570fbc6eff54109ac21942fa0cf49ea = L.marker(
+                [39.051097999999996, -94.481115],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_c6f1cb481ad5406990c6fa4cdb2ce67f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6570fbc6eff54109ac21942fa0cf49ea.setIcon(icon_c6f1cb481ad5406990c6fa4cdb2ce67f);
+        
+    
+        var popup_9e38985b31f746839f98d9583f314fbb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c69124a6daf48a7a2f97ab689eeb278 = $(`<div id="html_5c69124a6daf48a7a2f97ab689eeb278" style="width: 100.0%; height: 100.0%;">Kauffman Stadium</div>`)[0];
+            popup_9e38985b31f746839f98d9583f314fbb.setContent(html_5c69124a6daf48a7a2f97ab689eeb278);
+        
+
+        marker_6570fbc6eff54109ac21942fa0cf49ea.bindPopup(popup_9e38985b31f746839f98d9583f314fbb)
+        ;
+
+        
+    
+    
+            var marker_9906316aa7904be98ceb5927201081f1 = L.marker(
+                [25.778655, -80.22030500000001],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_9a140fdb2c6e47c5beba395f2e5f2635 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9906316aa7904be98ceb5927201081f1.setIcon(icon_9a140fdb2c6e47c5beba395f2e5f2635);
+        
+    
+        var popup_d31792f8e0f14fb49877196a15adcf21 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f518d63398e644e5840c5200500c8626 = $(`<div id="html_f518d63398e644e5840c5200500c8626" style="width: 100.0%; height: 100.0%;">Marlins Park</div>`)[0];
+            popup_d31792f8e0f14fb49877196a15adcf21.setContent(html_f518d63398e644e5840c5200500c8626);
+        
+
+        marker_9906316aa7904be98ceb5927201081f1.bindPopup(popup_d31792f8e0f14fb49877196a15adcf21)
+        ;
+
+        
+    
+    
+            var marker_70445db7c7cf425e8c0c2db3122ff1f7 = L.marker(
+                [43.027982, -87.971165],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_b80e1d9a39e6465694455e253ae63aae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_70445db7c7cf425e8c0c2db3122ff1f7.setIcon(icon_b80e1d9a39e6465694455e253ae63aae);
+        
+    
+        var popup_bb486923bd974897be9674b080295ed1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fea2b379358b4ffc90accd4f5a736518 = $(`<div id="html_fea2b379358b4ffc90accd4f5a736518" style="width: 100.0%; height: 100.0%;">Miller Park</div>`)[0];
+            popup_bb486923bd974897be9674b080295ed1.setContent(html_fea2b379358b4ffc90accd4f5a736518);
+        
+
+        marker_70445db7c7cf425e8c0c2db3122ff1f7.bindPopup(popup_bb486923bd974897be9674b080295ed1)
+        ;
+
+        
+    
+    
+            var marker_8b24e2baea8a4198b1c5506879d84832 = L.marker(
+                [29.756965, -95.354824],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_89b218290d0145309829bb5abcac72db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8b24e2baea8a4198b1c5506879d84832.setIcon(icon_89b218290d0145309829bb5abcac72db);
+        
+    
+        var popup_4bda63d1aeca49e7b87ebba10a3b1496 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8932d58da5b845e3ba920a92eb835e48 = $(`<div id="html_8932d58da5b845e3ba920a92eb835e48" style="width: 100.0%; height: 100.0%;">Minute Maid Park</div>`)[0];
+            popup_4bda63d1aeca49e7b87ebba10a3b1496.setContent(html_8932d58da5b845e3ba920a92eb835e48);
+        
+
+        marker_8b24e2baea8a4198b1c5506879d84832.bindPopup(popup_4bda63d1aeca49e7b87ebba10a3b1496)
+        ;
+
+        
+    
+    
+            var marker_92073bdfd8884c76acaaeb09c949b607 = L.marker(
+                [38.87301, -77.00745699999999],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_4ceec9901c5a4228879303e0c0ce2a30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_92073bdfd8884c76acaaeb09c949b607.setIcon(icon_4ceec9901c5a4228879303e0c0ce2a30);
+        
+    
+        var popup_404b33c3879b4d528d792d1b4b96053f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d53316be2d6240d1ba7e854cc67ed28a = $(`<div id="html_d53316be2d6240d1ba7e854cc67ed28a" style="width: 100.0%; height: 100.0%;">Nationals Park</div>`)[0];
+            popup_404b33c3879b4d528d792d1b4b96053f.setContent(html_d53316be2d6240d1ba7e854cc67ed28a);
+        
+
+        marker_92073bdfd8884c76acaaeb09c949b607.bindPopup(popup_404b33c3879b4d528d792d1b4b96053f)
+        ;
+
+        
+    
+    
+            var marker_be3751a9fae04616b2ccae67f0c7e366 = L.marker(
+                [37.751605, -122.200523],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_8b90c9976e4245dbad7ff7e111d54bab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_be3751a9fae04616b2ccae67f0c7e366.setIcon(icon_8b90c9976e4245dbad7ff7e111d54bab);
+        
+    
+        var popup_0fd6d19169d6412a81f986290e5dd59e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f71f57d5d760427ea3577fb8de32f05a = $(`<div id="html_f71f57d5d760427ea3577fb8de32f05a" style="width: 100.0%; height: 100.0%;">O.co Coliseum</div>`)[0];
+            popup_0fd6d19169d6412a81f986290e5dd59e.setContent(html_f71f57d5d760427ea3577fb8de32f05a);
+        
+
+        marker_be3751a9fae04616b2ccae67f0c7e366.bindPopup(popup_0fd6d19169d6412a81f986290e5dd59e)
+        ;
+
+        
+    
+    
+            var marker_1734b58dd6484646b4d0caab7a463de9 = L.marker(
+                [39.283964000000005, -76.62161800000001],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_d84276741bbc41119a7fb376be9813ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1734b58dd6484646b4d0caab7a463de9.setIcon(icon_d84276741bbc41119a7fb376be9813ec);
+        
+    
+        var popup_8fb6e34ec45d4f009641fb4576ed03b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2ff50f6e69749c1b30efede01382fb9 = $(`<div id="html_f2ff50f6e69749c1b30efede01382fb9" style="width: 100.0%; height: 100.0%;">Oriole Park at Camden Yards</div>`)[0];
+            popup_8fb6e34ec45d4f009641fb4576ed03b8.setContent(html_f2ff50f6e69749c1b30efede01382fb9);
+        
+
+        marker_1734b58dd6484646b4d0caab7a463de9.bindPopup(popup_8fb6e34ec45d4f009641fb4576ed03b8)
+        ;
+
+        
+    
+    
+            var marker_b41d603865584806934b9527e62e606a = L.marker(
+                [32.70771, -117.157097],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_94ceb06d93b34579946f32102d6be153 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b41d603865584806934b9527e62e606a.setIcon(icon_94ceb06d93b34579946f32102d6be153);
+        
+    
+        var popup_112ff81633834f6590c8cea905012900 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7aec8ce3148f4de5b43d934110e0ed9f = $(`<div id="html_7aec8ce3148f4de5b43d934110e0ed9f" style="width: 100.0%; height: 100.0%;">Petco Park</div>`)[0];
+            popup_112ff81633834f6590c8cea905012900.setContent(html_7aec8ce3148f4de5b43d934110e0ed9f);
+        
+
+        marker_b41d603865584806934b9527e62e606a.bindPopup(popup_112ff81633834f6590c8cea905012900)
+        ;
+
+        
+    
+    
+            var marker_dd5e7f53e59d4d5daff1a5ef87efe297 = L.marker(
+                [40.447307, -80.00684100000001],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_1855c4fd790647e58067a63317d80431 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dd5e7f53e59d4d5daff1a5ef87efe297.setIcon(icon_1855c4fd790647e58067a63317d80431);
+        
+    
+        var popup_81d4176355f347b5897d0575fd1844f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d8336cd49ec146efa83cb9e205fb5329 = $(`<div id="html_d8336cd49ec146efa83cb9e205fb5329" style="width: 100.0%; height: 100.0%;">PNC Park</div>`)[0];
+            popup_81d4176355f347b5897d0575fd1844f9.setContent(html_d8336cd49ec146efa83cb9e205fb5329);
+        
+
+        marker_dd5e7f53e59d4d5daff1a5ef87efe297.bindPopup(popup_81d4176355f347b5897d0575fd1844f9)
+        ;
+
+        
+    
+    
+            var marker_a55ae622c3cf487ca98b14fd052eb9d4 = L.marker(
+                [41.496192, -81.685238],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_68a386d7946d4002a4bb1ca046ca3ddb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a55ae622c3cf487ca98b14fd052eb9d4.setIcon(icon_68a386d7946d4002a4bb1ca046ca3ddb);
+        
+    
+        var popup_465e255b44b146aeaddbb2697d7d23a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e375e6783b55408eae1692c209f0aae6 = $(`<div id="html_e375e6783b55408eae1692c209f0aae6" style="width: 100.0%; height: 100.0%;">Progressive Field</div>`)[0];
+            popup_465e255b44b146aeaddbb2697d7d23a8.setContent(html_e375e6783b55408eae1692c209f0aae6);
+        
+
+        marker_a55ae622c3cf487ca98b14fd052eb9d4.bindPopup(popup_465e255b44b146aeaddbb2697d7d23a8)
+        ;
+
+        
+    
+    
+            var marker_2a038dd232454fe69cc1777cea272a9c = L.marker(
+                [43.641110999999995, -79.389675],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_bd890b5cec6e4e13999ba3941763c7d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2a038dd232454fe69cc1777cea272a9c.setIcon(icon_bd890b5cec6e4e13999ba3941763c7d3);
+        
+    
+        var popup_0cfbc697eea74af0a258c620189d8158 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98bc808732be4cc4998d46e6b7b398fc = $(`<div id="html_98bc808732be4cc4998d46e6b7b398fc" style="width: 100.0%; height: 100.0%;">Rogers Centre</div>`)[0];
+            popup_0cfbc697eea74af0a258c620189d8158.setContent(html_98bc808732be4cc4998d46e6b7b398fc);
+        
+
+        marker_2a038dd232454fe69cc1777cea272a9c.bindPopup(popup_0cfbc697eea74af0a258c620189d8158)
+        ;
+
+        
+    
+    
+            var marker_3280ac2573094c81bf66a8369dc37099 = L.marker(
+                [47.591358, -122.332283],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_e8465cd8ba45473193c6947a5a381aeb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3280ac2573094c81bf66a8369dc37099.setIcon(icon_e8465cd8ba45473193c6947a5a381aeb);
+        
+    
+        var popup_f1354426d9a4404c8c5e2c39fa6ff620 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f483138b955c4a029c939db18bfaee06 = $(`<div id="html_f483138b955c4a029c939db18bfaee06" style="width: 100.0%; height: 100.0%;">Safeco Field</div>`)[0];
+            popup_f1354426d9a4404c8c5e2c39fa6ff620.setContent(html_f483138b955c4a029c939db18bfaee06);
+        
+
+        marker_3280ac2573094c81bf66a8369dc37099.bindPopup(popup_f1354426d9a4404c8c5e2c39fa6ff620)
+        ;
+
+        
+    
+    
+            var marker_6b83d6ab44d34eaf98aa278f8552bce3 = L.marker(
+                [44.981713, -93.27734699999999],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_9ed827db94a24746812e47b01d79e050 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6b83d6ab44d34eaf98aa278f8552bce3.setIcon(icon_9ed827db94a24746812e47b01d79e050);
+        
+    
+        var popup_41eccdfbf9864bec82e2ae6546d7d5c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee1c22f9c9c64849a4a5e4b57431f964 = $(`<div id="html_ee1c22f9c9c64849a4a5e4b57431f964" style="width: 100.0%; height: 100.0%;">Target Field</div>`)[0];
+            popup_41eccdfbf9864bec82e2ae6546d7d5c6.setContent(html_ee1c22f9c9c64849a4a5e4b57431f964);
+        
+
+        marker_6b83d6ab44d34eaf98aa278f8552bce3.bindPopup(popup_41eccdfbf9864bec82e2ae6546d7d5c6)
+        ;
+
+        
+    
+    
+            var marker_58d9f4a03dd04214bbeff27d793b9ca4 = L.marker(
+                [27.768159999999998, -82.653465],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_b2966718e313403885dfbf11f96a4d2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_58d9f4a03dd04214bbeff27d793b9ca4.setIcon(icon_b2966718e313403885dfbf11f96a4d2a);
+        
+    
+        var popup_1394a5cbcd9d4bca988920c35e7cb11b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91ad7034826b4acebb0e670cf802b863 = $(`<div id="html_91ad7034826b4acebb0e670cf802b863" style="width: 100.0%; height: 100.0%;">Tropicana Field</div>`)[0];
+            popup_1394a5cbcd9d4bca988920c35e7cb11b.setContent(html_91ad7034826b4acebb0e670cf802b863);
+        
+
+        marker_58d9f4a03dd04214bbeff27d793b9ca4.bindPopup(popup_1394a5cbcd9d4bca988920c35e7cb11b)
+        ;
+
+        
+    
+    
+            var marker_5aa40223c0bf4255b8105a097f39dd9f = L.marker(
+                [33.734805, -84.389996],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_03475ca1eeb8446ca31a4f269712e19e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5aa40223c0bf4255b8105a097f39dd9f.setIcon(icon_03475ca1eeb8446ca31a4f269712e19e);
+        
+    
+        var popup_99ddf680abba4eb583ce1435c91dea8c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5515b8a4e114477be90f617406871c6 = $(`<div id="html_a5515b8a4e114477be90f617406871c6" style="width: 100.0%; height: 100.0%;">Turner Field</div>`)[0];
+            popup_99ddf680abba4eb583ce1435c91dea8c.setContent(html_a5515b8a4e114477be90f617406871c6);
+        
+
+        marker_5aa40223c0bf4255b8105a097f39dd9f.bindPopup(popup_99ddf680abba4eb583ce1435c91dea8c)
+        ;
+
+        
+    
+    
+            var marker_9c2122df485c4211b7fb19275e4d3a52 = L.marker(
+                [41.829908, -87.63354],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_f5ae5e4adb27466a8543d84b621dcb00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9c2122df485c4211b7fb19275e4d3a52.setIcon(icon_f5ae5e4adb27466a8543d84b621dcb00);
+        
+    
+        var popup_96e7751300254050bcbeb16da60c1db2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c82f0f62ad04e8c84a60e7d3cb883e0 = $(`<div id="html_0c82f0f62ad04e8c84a60e7d3cb883e0" style="width: 100.0%; height: 100.0%;">U.S. Cellular Field</div>`)[0];
+            popup_96e7751300254050bcbeb16da60c1db2.setContent(html_0c82f0f62ad04e8c84a60e7d3cb883e0);
+        
+
+        marker_9c2122df485c4211b7fb19275e4d3a52.bindPopup(popup_96e7751300254050bcbeb16da60c1db2)
+        ;
+
+        
+    
+    
+            var marker_ff6b063a5c5c475691d8b52b3de02dfc = L.marker(
+                [41.947856, -87.65588699999999],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_918b1d963c044b7296ded2380e27a405 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ff6b063a5c5c475691d8b52b3de02dfc.setIcon(icon_918b1d963c044b7296ded2380e27a405);
+        
+    
+        var popup_4bfa6bbddc44428986a272be89249cc8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_896e4720e2514f13984a401a75e65b34 = $(`<div id="html_896e4720e2514f13984a401a75e65b34" style="width: 100.0%; height: 100.0%;">Wrigley Field</div>`)[0];
+            popup_4bfa6bbddc44428986a272be89249cc8.setContent(html_896e4720e2514f13984a401a75e65b34);
+        
+
+        marker_ff6b063a5c5c475691d8b52b3de02dfc.bindPopup(popup_4bfa6bbddc44428986a272be89249cc8)
+        ;
+
+        
+    
+    
+            var marker_b28f2d58a3e9459bbfc60575f0c477d2 = L.marker(
+                [40.829327, -73.927735],
+                {}
+            ).addTo(feature_group_c02b670048954b909e4776bd794dc30f);
+        
+    
+            var icon_ac47e4f620714520947d970403c3c525 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b28f2d58a3e9459bbfc60575f0c477d2.setIcon(icon_ac47e4f620714520947d970403c3c525);
+        
+    
+        var popup_005e82e0eb3e4e458db113eddc73ca0b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_87d3178016ff452f96a11395c9f72ab4 = $(`<div id="html_87d3178016ff452f96a11395c9f72ab4" style="width: 100.0%; height: 100.0%;">Yankee Stadium</div>`)[0];
+            popup_005e82e0eb3e4e458db113eddc73ca0b.setContent(html_87d3178016ff452f96a11395c9f72ab4);
+        
+
+        marker_b28f2d58a3e9459bbfc60575f0c477d2.bindPopup(popup_005e82e0eb3e4e458db113eddc73ca0b)
+        ;
+
+        
+    
+    
+            var feature_group_5b276c3a4e7448eda9ca7769e4fc1599 = L.featureGroup(
+                {}
+            ).addTo(map_58b4f51fc85d48ed8b104eee80a3516e);
+        
+    
+            var marker_fc772a7db43549cbb1edf4e7275dc632 = L.marker(
+                [36.166461, -86.771289],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_7d8bd48e99de4eaa8f2a0a53f852e079 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fc772a7db43549cbb1edf4e7275dc632.setIcon(icon_7d8bd48e99de4eaa8f2a0a53f852e079);
+        
+    
+        var popup_bdd1154fe52c4724b07bede2d7ba554b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3210fcbf023c433f8d86f0ff182bc081 = $(`<div id="html_3210fcbf023c433f8d86f0ff182bc081" style="width: 100.0%; height: 100.0%;">Titans</div>`)[0];
+            popup_bdd1154fe52c4724b07bede2d7ba554b.setContent(html_3210fcbf023c433f8d86f0ff182bc081);
+        
+
+        marker_fc772a7db43549cbb1edf4e7275dc632.bindPopup(popup_bdd1154fe52c4724b07bede2d7ba554b)
+        ;
+
+        
+    
+    
+            var marker_dbd04f53c0134927a2cf93947c84f329 = L.marker(
+                [40.812194, -74.076983],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_5f726b310b9146d1a7768c0858a08bef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dbd04f53c0134927a2cf93947c84f329.setIcon(icon_5f726b310b9146d1a7768c0858a08bef);
+        
+    
+        var popup_1e41af2a23c14d9babdbb01a316ae4b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_87544b4727a640f2b045279c77f85882 = $(`<div id="html_87544b4727a640f2b045279c77f85882" style="width: 100.0%; height: 100.0%;">Giants</div>`)[0];
+            popup_1e41af2a23c14d9babdbb01a316ae4b8.setContent(html_87544b4727a640f2b045279c77f85882);
+        
+
+        marker_dbd04f53c0134927a2cf93947c84f329.bindPopup(popup_1e41af2a23c14d9babdbb01a316ae4b8)
+        ;
+
+        
+    
+    
+            var marker_e030eff788cd4cf3a1314ff0e2c33517 = L.marker(
+                [40.446785999999996, -80.015761],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_3a69cf00f2d14ed2b29b5633008af479 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e030eff788cd4cf3a1314ff0e2c33517.setIcon(icon_3a69cf00f2d14ed2b29b5633008af479);
+        
+    
+        var popup_85d75734c5e14ed7ad8c6681692f7451 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3884ba5660b3400ca861d991e1c36185 = $(`<div id="html_3884ba5660b3400ca861d991e1c36185" style="width: 100.0%; height: 100.0%;">Steelers</div>`)[0];
+            popup_85d75734c5e14ed7ad8c6681692f7451.setContent(html_3884ba5660b3400ca861d991e1c36185);
+        
+
+        marker_e030eff788cd4cf3a1314ff0e2c33517.bindPopup(popup_85d75734c5e14ed7ad8c6681692f7451)
+        ;
+
+        
+    
+    
+            var marker_f2f0000aface440989d9029e8602949c = L.marker(
+                [35.225808, -80.852861],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_bf864fcc066041a7a2713379849f0480 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f2f0000aface440989d9029e8602949c.setIcon(icon_bf864fcc066041a7a2713379849f0480);
+        
+    
+        var popup_3e7532225ef741178709dac97c57bad7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6dd4179ed9cb4c419e4d987a5898225e = $(`<div id="html_6dd4179ed9cb4c419e4d987a5898225e" style="width: 100.0%; height: 100.0%;">Panthers</div>`)[0];
+            popup_3e7532225ef741178709dac97c57bad7.setContent(html_6dd4179ed9cb4c419e4d987a5898225e);
+        
+
+        marker_f2f0000aface440989d9029e8602949c.bindPopup(popup_3e7532225ef741178709dac97c57bad7)
+        ;
+
+        
+    
+    
+            var marker_1b0a6f3c64834b13baa7a889e117e1db = L.marker(
+                [39.277969, -76.62276700000001],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_f304294a7b324441a4b33e72d73cae0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1b0a6f3c64834b13baa7a889e117e1db.setIcon(icon_f304294a7b324441a4b33e72d73cae0c);
+        
+    
+        var popup_2e32662b894444c5b96f5ebe2a74ccbc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ec13e0349084b5babfcfc6cbd36714f = $(`<div id="html_2ec13e0349084b5babfcfc6cbd36714f" style="width: 100.0%; height: 100.0%;">Ravens</div>`)[0];
+            popup_2e32662b894444c5b96f5ebe2a74ccbc.setContent(html_2ec13e0349084b5babfcfc6cbd36714f);
+        
+
+        marker_1b0a6f3c64834b13baa7a889e117e1db.bindPopup(popup_2e32662b894444c5b96f5ebe2a74ccbc)
+        ;
+
+        
+    
+    
+            var marker_3025338b98854567a7b7702a8fb7d472 = L.marker(
+                [27.975966999999997, -82.50335],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_9913f0546c494e4b8d0fecdfdecbc86f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3025338b98854567a7b7702a8fb7d472.setIcon(icon_9913f0546c494e4b8d0fecdfdecbc86f);
+        
+    
+        var popup_85ec79415d78450084aaa5aa56f57324 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c20c378c454f41cca44410fc25203936 = $(`<div id="html_c20c378c454f41cca44410fc25203936" style="width: 100.0%; height: 100.0%;">Buccaneers</div>`)[0];
+            popup_85ec79415d78450084aaa5aa56f57324.setContent(html_c20c378c454f41cca44410fc25203936);
+        
+
+        marker_3025338b98854567a7b7702a8fb7d472.bindPopup(popup_85ec79415d78450084aaa5aa56f57324)
+        ;
+
+        
+    
+    
+            var marker_98a5d626c01046c4b20b426c2d21e1b7 = L.marker(
+                [39.760056, -86.16380600000001],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_65273d05da684d5d8fbb18d927a1869a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_98a5d626c01046c4b20b426c2d21e1b7.setIcon(icon_65273d05da684d5d8fbb18d927a1869a);
+        
+    
+        var popup_971c32b044fe48509e72574dee894530 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d11d577447d140c3b0230e1172f460ca = $(`<div id="html_d11d577447d140c3b0230e1172f460ca" style="width: 100.0%; height: 100.0%;">Colts</div>`)[0];
+            popup_971c32b044fe48509e72574dee894530.setContent(html_d11d577447d140c3b0230e1172f460ca);
+        
+
+        marker_98a5d626c01046c4b20b426c2d21e1b7.bindPopup(popup_971c32b044fe48509e72574dee894530)
+        ;
+
+        
+    
+    
+            var marker_865dfbb9d62b49a287fb06be22f738bd = L.marker(
+                [44.973881, -93.258094],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_d711cf6df10a476f8bad12e48422991b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_865dfbb9d62b49a287fb06be22f738bd.setIcon(icon_d711cf6df10a476f8bad12e48422991b);
+        
+    
+        var popup_12228130202041e7b944de6edbf01158 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb6aa230b4d64ce7ac1327525de4f5d3 = $(`<div id="html_eb6aa230b4d64ce7ac1327525de4f5d3" style="width: 100.0%; height: 100.0%;">Vikings</div>`)[0];
+            popup_12228130202041e7b944de6edbf01158.setContent(html_eb6aa230b4d64ce7ac1327525de4f5d3);
+        
+
+        marker_865dfbb9d62b49a287fb06be22f738bd.bindPopup(popup_12228130202041e7b944de6edbf01158)
+        ;
+
+        
+    
+    
+            var marker_7cc52ebeaff34651933896315ae1f141 = L.marker(
+                [33.5277, -112.26260800000001],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_ed215e42a2ef4d9989ec584675cd7d80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7cc52ebeaff34651933896315ae1f141.setIcon(icon_ed215e42a2ef4d9989ec584675cd7d80);
+        
+    
+        var popup_fdd361ab4a824f568907fd3a0d2cb166 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_71d57462206a4243baf58c1cc7f6bc3e = $(`<div id="html_71d57462206a4243baf58c1cc7f6bc3e" style="width: 100.0%; height: 100.0%;">Cardinals</div>`)[0];
+            popup_fdd361ab4a824f568907fd3a0d2cb166.setContent(html_71d57462206a4243baf58c1cc7f6bc3e);
+        
+
+        marker_7cc52ebeaff34651933896315ae1f141.bindPopup(popup_fdd361ab4a824f568907fd3a0d2cb166)
+        ;
+
+        
+    
+    
+            var marker_9b74b00857b74cfe95a1101bb751dabd = L.marker(
+                [32.747778000000004, -97.09277800000001],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_db4116adc5e54b45a264dcb1b66f18c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9b74b00857b74cfe95a1101bb751dabd.setIcon(icon_db4116adc5e54b45a264dcb1b66f18c0);
+        
+    
+        var popup_e8ceb0c0188c4a18aa033f7eab16d262 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c52157f438645bf95becbfa92fceb81 = $(`<div id="html_4c52157f438645bf95becbfa92fceb81" style="width: 100.0%; height: 100.0%;">Cowboys</div>`)[0];
+            popup_e8ceb0c0188c4a18aa033f7eab16d262.setContent(html_4c52157f438645bf95becbfa92fceb81);
+        
+
+        marker_9b74b00857b74cfe95a1101bb751dabd.bindPopup(popup_e8ceb0c0188c4a18aa033f7eab16d262)
+        ;
+
+        
+    
+    
+            var marker_469d702d70394e81a38b94ea8f4f21c9 = L.marker(
+                [33.757614000000004, -84.400972],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_07768b84cca1407ea8e977e313a4e3f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_469d702d70394e81a38b94ea8f4f21c9.setIcon(icon_07768b84cca1407ea8e977e313a4e3f9);
+        
+    
+        var popup_1670386d323742789a952c221b1f0240 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2349c14481743449c9d16f1c0a55865 = $(`<div id="html_b2349c14481743449c9d16f1c0a55865" style="width: 100.0%; height: 100.0%;">Falcons</div>`)[0];
+            popup_1670386d323742789a952c221b1f0240.setContent(html_b2349c14481743449c9d16f1c0a55865);
+        
+
+        marker_469d702d70394e81a38b94ea8f4f21c9.bindPopup(popup_1670386d323742789a952c221b1f0240)
+        ;
+
+        
+    
+    
+            var marker_a18e62e4314843db8bcb806684b85d3d = L.marker(
+                [40.812194, -74.076983],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_0b2a9b7f317344708d3bc8ae2848b104 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a18e62e4314843db8bcb806684b85d3d.setIcon(icon_0b2a9b7f317344708d3bc8ae2848b104);
+        
+    
+        var popup_dc847bc501e1478ea5bdfdda1519294d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_63a3a66ee33446d8af1079dbde8f7d66 = $(`<div id="html_63a3a66ee33446d8af1079dbde8f7d66" style="width: 100.0%; height: 100.0%;">Jets</div>`)[0];
+            popup_dc847bc501e1478ea5bdfdda1519294d.setContent(html_63a3a66ee33446d8af1079dbde8f7d66);
+        
+
+        marker_a18e62e4314843db8bcb806684b85d3d.bindPopup(popup_dc847bc501e1478ea5bdfdda1519294d)
+        ;
+
+        
+    
+    
+            var marker_e123c088fe254224af9d2d2422e8ec37 = L.marker(
+                [39.743936, -105.02009699999999],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_1799239d51a648d3ba7deff422daf4c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e123c088fe254224af9d2d2422e8ec37.setIcon(icon_1799239d51a648d3ba7deff422daf4c8);
+        
+    
+        var popup_18b52f4bab9e4b2cb5c033543363eafb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea32790b9d974d22bd760bc9876d8786 = $(`<div id="html_ea32790b9d974d22bd760bc9876d8786" style="width: 100.0%; height: 100.0%;">Broncos</div>`)[0];
+            popup_18b52f4bab9e4b2cb5c033543363eafb.setContent(html_ea32790b9d974d22bd760bc9876d8786);
+        
+
+        marker_e123c088fe254224af9d2d2422e8ec37.bindPopup(popup_18b52f4bab9e4b2cb5c033543363eafb)
+        ;
+
+        
+    
+    
+            var marker_523fa761783040c5aaaa3a569d449edd = L.marker(
+                [25.957919, -80.238842],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_40c220a2eb9e4910a680c7ddaa7c6687 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_523fa761783040c5aaaa3a569d449edd.setIcon(icon_40c220a2eb9e4910a680c7ddaa7c6687);
+        
+    
+        var popup_457a25634e8c44e68454480d683f428f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6ea017bc0804633aae20b5f0cc38365 = $(`<div id="html_e6ea017bc0804633aae20b5f0cc38365" style="width: 100.0%; height: 100.0%;">Dolphins</div>`)[0];
+            popup_457a25634e8c44e68454480d683f428f.setContent(html_e6ea017bc0804633aae20b5f0cc38365);
+        
+
+        marker_523fa761783040c5aaaa3a569d449edd.bindPopup(popup_457a25634e8c44e68454480d683f428f)
+        ;
+
+        
+    
+    
+            var marker_e3142c78163d47d8b37250f9590c0f71 = L.marker(
+                [39.900775, -75.16745300000001],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_4746a3f87873456699e432756a32b30b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e3142c78163d47d8b37250f9590c0f71.setIcon(icon_4746a3f87873456699e432756a32b30b);
+        
+    
+        var popup_3180e3e5de554dd69a8ca0315d13b65c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e691c0d0ba3408f98acddaf06eb0338 = $(`<div id="html_9e691c0d0ba3408f98acddaf06eb0338" style="width: 100.0%; height: 100.0%;">Eagles</div>`)[0];
+            popup_3180e3e5de554dd69a8ca0315d13b65c.setContent(html_9e691c0d0ba3408f98acddaf06eb0338);
+        
+
+        marker_e3142c78163d47d8b37250f9590c0f71.bindPopup(popup_3180e3e5de554dd69a8ca0315d13b65c)
+        ;
+
+        
+    
+    
+            var marker_328cf7fc434a48bead0536ee427dea43 = L.marker(
+                [41.862306, -87.616672],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_0a19bda83a2c43f09f7499739cb783a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_328cf7fc434a48bead0536ee427dea43.setIcon(icon_0a19bda83a2c43f09f7499739cb783a6);
+        
+    
+        var popup_eeb36f67f96b4aae84afe65cc3316d28 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_846025f43daf43f8af9b3d552f1bb1b2 = $(`<div id="html_846025f43daf43f8af9b3d552f1bb1b2" style="width: 100.0%; height: 100.0%;">Bears</div>`)[0];
+            popup_eeb36f67f96b4aae84afe65cc3316d28.setContent(html_846025f43daf43f8af9b3d552f1bb1b2);
+        
+
+        marker_328cf7fc434a48bead0536ee427dea43.bindPopup(popup_eeb36f67f96b4aae84afe65cc3316d28)
+        ;
+
+        
+    
+    
+            var marker_6203316c517f4dcc87277d2209bff439 = L.marker(
+                [42.090925, -71.26435],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_3d474dcf55944ea38298ad0680019789 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6203316c517f4dcc87277d2209bff439.setIcon(icon_3d474dcf55944ea38298ad0680019789);
+        
+    
+        var popup_b8a7c2c6bdc6487ca986e4d928a4325b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45e4c7e4a1e54a2888b72c201ceb7ee9 = $(`<div id="html_45e4c7e4a1e54a2888b72c201ceb7ee9" style="width: 100.0%; height: 100.0%;">Patriots</div>`)[0];
+            popup_b8a7c2c6bdc6487ca986e4d928a4325b.setContent(html_45e4c7e4a1e54a2888b72c201ceb7ee9);
+        
+
+        marker_6203316c517f4dcc87277d2209bff439.bindPopup(popup_b8a7c2c6bdc6487ca986e4d928a4325b)
+        ;
+
+        
+    
+    
+            var marker_4c550ee2080348f788874f156c1760b1 = L.marker(
+                [38.907697, -76.864517],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_c90f7997cae5447d9f2aa7efa59befbc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4c550ee2080348f788874f156c1760b1.setIcon(icon_c90f7997cae5447d9f2aa7efa59befbc);
+        
+    
+        var popup_5a0db1b7c5694671ad68b0679b2f6036 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd2146ecfd0d43a4a6fbf4f7d0be44de = $(`<div id="html_fd2146ecfd0d43a4a6fbf4f7d0be44de" style="width: 100.0%; height: 100.0%;">Redskins</div>`)[0];
+            popup_5a0db1b7c5694671ad68b0679b2f6036.setContent(html_fd2146ecfd0d43a4a6fbf4f7d0be44de);
+        
+
+        marker_4c550ee2080348f788874f156c1760b1.bindPopup(popup_5a0db1b7c5694671ad68b0679b2f6036)
+        ;
+
+        
+    
+    
+            var marker_1e7a5b3af51e48e4a4cf8764af2859d7 = L.marker(
+                [44.501306, -88.062167],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_088f159d5ffa4881bcd827443e9b8d52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1e7a5b3af51e48e4a4cf8764af2859d7.setIcon(icon_088f159d5ffa4881bcd827443e9b8d52);
+        
+    
+        var popup_7b9ddab3480f49619d25efaa1da780bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd8ddef671a948559dddff7183d166e7 = $(`<div id="html_bd8ddef671a948559dddff7183d166e7" style="width: 100.0%; height: 100.0%;">Packers</div>`)[0];
+            popup_7b9ddab3480f49619d25efaa1da780bf.setContent(html_bd8ddef671a948559dddff7183d166e7);
+        
+
+        marker_1e7a5b3af51e48e4a4cf8764af2859d7.bindPopup(popup_7b9ddab3480f49619d25efaa1da780bf)
+        ;
+
+        
+    
+    
+            var marker_a32b1b79ccf14a8e9a204eed51e93fec = L.marker(
+                [32.783117, -117.119525],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_47e9fb6066c142019ba63c5b9b84df0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a32b1b79ccf14a8e9a204eed51e93fec.setIcon(icon_47e9fb6066c142019ba63c5b9b84df0e);
+        
+    
+        var popup_452672ecd9fe4e0b81c9374511c4b534 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad5e51458e7f47f59c54208d56bbf57c = $(`<div id="html_ad5e51458e7f47f59c54208d56bbf57c" style="width: 100.0%; height: 100.0%;">Chargers</div>`)[0];
+            popup_452672ecd9fe4e0b81c9374511c4b534.setContent(html_ad5e51458e7f47f59c54208d56bbf57c);
+        
+
+        marker_a32b1b79ccf14a8e9a204eed51e93fec.bindPopup(popup_452672ecd9fe4e0b81c9374511c4b534)
+        ;
+
+        
+    
+    
+            var marker_1c7c4a573d084bddbdf24d6b7e78b625 = L.marker(
+                [29.950931, -90.08136400000001],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_f659c5622d184fc2b2938ccc8dd2eba9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1c7c4a573d084bddbdf24d6b7e78b625.setIcon(icon_f659c5622d184fc2b2938ccc8dd2eba9);
+        
+    
+        var popup_536d16c429204275849678cc5b764f1e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_780c2cfa131e4b8db2f225d1a22ca49f = $(`<div id="html_780c2cfa131e4b8db2f225d1a22ca49f" style="width: 100.0%; height: 100.0%;">Saints</div>`)[0];
+            popup_536d16c429204275849678cc5b764f1e.setContent(html_780c2cfa131e4b8db2f225d1a22ca49f);
+        
+
+        marker_1c7c4a573d084bddbdf24d6b7e78b625.bindPopup(popup_536d16c429204275849678cc5b764f1e)
+        ;
+
+        
+    
+    
+            var marker_b4b5b367976f43e3a5e812a6cb94d182 = L.marker(
+                [29.684781, -95.410956],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_bf66acf4a8bb43a28d7f9693ffb34074 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b4b5b367976f43e3a5e812a6cb94d182.setIcon(icon_bf66acf4a8bb43a28d7f9693ffb34074);
+        
+    
+        var popup_5fec38722bd24f2ea0512f2ac48e6b2f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c01148e3720d4b598f0cc226d036d772 = $(`<div id="html_c01148e3720d4b598f0cc226d036d772" style="width: 100.0%; height: 100.0%;">Texans</div>`)[0];
+            popup_5fec38722bd24f2ea0512f2ac48e6b2f.setContent(html_c01148e3720d4b598f0cc226d036d772);
+        
+
+        marker_b4b5b367976f43e3a5e812a6cb94d182.bindPopup(popup_5fec38722bd24f2ea0512f2ac48e6b2f)
+        ;
+
+        
+    
+    
+            var marker_c891bd66285a4dec86776f5dc93a8b3c = L.marker(
+                [42.773739, -78.786978],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_64e5deb009f745ef9e50e2502f3cedfd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c891bd66285a4dec86776f5dc93a8b3c.setIcon(icon_64e5deb009f745ef9e50e2502f3cedfd);
+        
+    
+        var popup_46a44d3018dc42068eefaeed9445fd2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e7197d1fea0547e8873986a77bdd7fbb = $(`<div id="html_e7197d1fea0547e8873986a77bdd7fbb" style="width: 100.0%; height: 100.0%;">Bills</div>`)[0];
+            popup_46a44d3018dc42068eefaeed9445fd2c.setContent(html_e7197d1fea0547e8873986a77bdd7fbb);
+        
+
+        marker_c891bd66285a4dec86776f5dc93a8b3c.bindPopup(popup_46a44d3018dc42068eefaeed9445fd2c)
+        ;
+
+        
+    
+    
+            var marker_62e96269f6de4a55b3cafaf896653a4d = L.marker(
+                [37.713485999999996, -122.386256],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_5b66151db82f4e00ac2680d3d9b51b64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_62e96269f6de4a55b3cafaf896653a4d.setIcon(icon_5b66151db82f4e00ac2680d3d9b51b64);
+        
+    
+        var popup_aa5fea5f85a54015bc4a660bbdfa0504 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38f61c4c6cbb482da62fdd336e64449c = $(`<div id="html_38f61c4c6cbb482da62fdd336e64449c" style="width: 100.0%; height: 100.0%;">Forty-Niners</div>`)[0];
+            popup_aa5fea5f85a54015bc4a660bbdfa0504.setContent(html_38f61c4c6cbb482da62fdd336e64449c);
+        
+
+        marker_62e96269f6de4a55b3cafaf896653a4d.bindPopup(popup_aa5fea5f85a54015bc4a660bbdfa0504)
+        ;
+
+        
+    
+    
+            var marker_a239100673544b0a9f33a9db5530c921 = L.marker(
+                [30.323925, -81.63735600000001],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_af99ad9470824407966b580cdbea65a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a239100673544b0a9f33a9db5530c921.setIcon(icon_af99ad9470824407966b580cdbea65a3);
+        
+    
+        var popup_3ac2fb20232f4e7a8fa78c52585d6efd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be87cad3f0d84efa85477bee015342ac = $(`<div id="html_be87cad3f0d84efa85477bee015342ac" style="width: 100.0%; height: 100.0%;">Jaguars</div>`)[0];
+            popup_3ac2fb20232f4e7a8fa78c52585d6efd.setContent(html_be87cad3f0d84efa85477bee015342ac);
+        
+
+        marker_a239100673544b0a9f33a9db5530c921.bindPopup(popup_3ac2fb20232f4e7a8fa78c52585d6efd)
+        ;
+
+        
+    
+    
+            var marker_0fc87d3582614b09ac02cb28e8d2e943 = L.marker(
+                [41.506021999999994, -81.699564],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_d14a8752677040f88b88589ea6d8cf9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0fc87d3582614b09ac02cb28e8d2e943.setIcon(icon_d14a8752677040f88b88589ea6d8cf9b);
+        
+    
+        var popup_b3be79bed03a48ea841b7e6f282198bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d965734e2efd433f98f7aef40bbf0208 = $(`<div id="html_d965734e2efd433f98f7aef40bbf0208" style="width: 100.0%; height: 100.0%;">Browns</div>`)[0];
+            popup_b3be79bed03a48ea841b7e6f282198bc.setContent(html_d965734e2efd433f98f7aef40bbf0208);
+        
+
+        marker_0fc87d3582614b09ac02cb28e8d2e943.bindPopup(popup_b3be79bed03a48ea841b7e6f282198bc)
+        ;
+
+        
+    
+    
+            var marker_8b60f0c5434749a1b65f312292242391 = L.marker(
+                [37.751411, -122.20088899999999],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_e817cea68f4f4b2bb23861b2226e6f49 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8b60f0c5434749a1b65f312292242391.setIcon(icon_e817cea68f4f4b2bb23861b2226e6f49);
+        
+    
+        var popup_cf49a8a919874221ad37e1baa5266fa9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c46b39fa53344adba38b87fd5880f475 = $(`<div id="html_c46b39fa53344adba38b87fd5880f475" style="width: 100.0%; height: 100.0%;">Raiders</div>`)[0];
+            popup_cf49a8a919874221ad37e1baa5266fa9.setContent(html_c46b39fa53344adba38b87fd5880f475);
+        
+
+        marker_8b60f0c5434749a1b65f312292242391.bindPopup(popup_cf49a8a919874221ad37e1baa5266fa9)
+        ;
+
+        
+    
+    
+            var marker_2d947d393f214563be3218d982d9b219 = L.marker(
+                [39.048914, -94.484039],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_02784194cc824efaa13898a31fc8d1d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2d947d393f214563be3218d982d9b219.setIcon(icon_02784194cc824efaa13898a31fc8d1d5);
+        
+    
+        var popup_91447a1bc2064a01aaed5f4fa8172b63 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4b6aee0fba244b6282bc81cb24590f34 = $(`<div id="html_4b6aee0fba244b6282bc81cb24590f34" style="width: 100.0%; height: 100.0%;">Chiefs</div>`)[0];
+            popup_91447a1bc2064a01aaed5f4fa8172b63.setContent(html_4b6aee0fba244b6282bc81cb24590f34);
+        
+
+        marker_2d947d393f214563be3218d982d9b219.bindPopup(popup_91447a1bc2064a01aaed5f4fa8172b63)
+        ;
+
+        
+    
+    
+            var marker_ff329c1590bf40148f521797ad2d52ad = L.marker(
+                [38.632975, -90.188547],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_c80af61c78f745fe9a869d7f24e6690f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ff329c1590bf40148f521797ad2d52ad.setIcon(icon_c80af61c78f745fe9a869d7f24e6690f);
+        
+    
+        var popup_18f40838b081468c960463d56d024c5f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d47cc50551334bf69163439575ec76f3 = $(`<div id="html_d47cc50551334bf69163439575ec76f3" style="width: 100.0%; height: 100.0%;">Rams</div>`)[0];
+            popup_18f40838b081468c960463d56d024c5f.setContent(html_d47cc50551334bf69163439575ec76f3);
+        
+
+        marker_ff329c1590bf40148f521797ad2d52ad.bindPopup(popup_18f40838b081468c960463d56d024c5f)
+        ;
+
+        
+    
+    
+            var marker_dbe3e000c0914120bbb87399a7f0bf1b = L.marker(
+                [47.595153, -122.331625],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_53babeb79ff14630a595f724b3b96267 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dbe3e000c0914120bbb87399a7f0bf1b.setIcon(icon_53babeb79ff14630a595f724b3b96267);
+        
+    
+        var popup_d1ae4565dd6841b99faa31559ac8c19c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_40f66660171c44d8bf995f56aa9397dd = $(`<div id="html_40f66660171c44d8bf995f56aa9397dd" style="width: 100.0%; height: 100.0%;">Seahawks</div>`)[0];
+            popup_d1ae4565dd6841b99faa31559ac8c19c.setContent(html_40f66660171c44d8bf995f56aa9397dd);
+        
+
+        marker_dbe3e000c0914120bbb87399a7f0bf1b.bindPopup(popup_d1ae4565dd6841b99faa31559ac8c19c)
+        ;
+
+        
+    
+    
+            var marker_569c9691f0e5497aa7015b4138bcc901 = L.marker(
+                [39.095442, -84.516039],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_8f2952fb2ea14e9c8235d7100d4f667e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_569c9691f0e5497aa7015b4138bcc901.setIcon(icon_8f2952fb2ea14e9c8235d7100d4f667e);
+        
+    
+        var popup_aa67d6f8df43432dad15be86bcbde575 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e4a7148cb7649acb5e1e5afc0ba6265 = $(`<div id="html_0e4a7148cb7649acb5e1e5afc0ba6265" style="width: 100.0%; height: 100.0%;">Bengals</div>`)[0];
+            popup_aa67d6f8df43432dad15be86bcbde575.setContent(html_0e4a7148cb7649acb5e1e5afc0ba6265);
+        
+
+        marker_569c9691f0e5497aa7015b4138bcc901.bindPopup(popup_aa67d6f8df43432dad15be86bcbde575)
+        ;
+
+        
+    
+    
+            var marker_d3bd628909b749ffa6e48c5a321b8bad = L.marker(
+                [42.340156, -83.045808],
+                {}
+            ).addTo(feature_group_5b276c3a4e7448eda9ca7769e4fc1599);
+        
+    
+            var icon_82e77a72c8dc4e809f22e23b2100cf88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d3bd628909b749ffa6e48c5a321b8bad.setIcon(icon_82e77a72c8dc4e809f22e23b2100cf88);
+        
+    
+        var popup_6f8a712986eb42fcabbd3d32714e8bb4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b97117a3a3b4af8af3cf5c6bae886d5 = $(`<div id="html_9b97117a3a3b4af8af3cf5c6bae886d5" style="width: 100.0%; height: 100.0%;">Lions</div>`)[0];
+            popup_6f8a712986eb42fcabbd3d32714e8bb4.setContent(html_9b97117a3a3b4af8af3cf5c6bae886d5);
+        
+
+        marker_d3bd628909b749ffa6e48c5a321b8bad.bindPopup(popup_6f8a712986eb42fcabbd3d32714e8bb4)
+        ;
+
+        
+    
+    
+            var layer_control_c811d9fa1bc04d09b688cedb06b217a4 = {
+                base_layers : {
+                    "stamenterrain" : tile_layer_34881167055d46998548e1b8d38779fd,
+                },
+                overlays :  {
+                    "MLB Stadiums" : feature_group_c02b670048954b909e4776bd794dc30f,
+                    "NFL Stadiums" : feature_group_5b276c3a4e7448eda9ca7769e4fc1599,
+                },
+            };
+            L.control.layers(
+                layer_control_c811d9fa1bc04d09b688cedb06b217a4.base_layers,
+                layer_control_c811d9fa1bc04d09b688cedb06b217a4.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_58b4f51fc85d48ed8b104eee80a3516e);
+        
+</script>
